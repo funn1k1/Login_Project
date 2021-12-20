@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <div class="login-form-wrap d-flex align-items-center justify-content-center auth-background_img">
+        <div class="form-card card ml-auto">
+          <div class="card-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="login-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#login"
+                  type="button"
+                  role="tab"
+                  aria-controls="login"
+                  aria-selected="true"
+                >
+                  Login
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="register-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#register"
+                  type="button"
+                  role="tab"
+                  aria-controls="register"
+                  aria-selected="false"
+                >
+                  Register
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="login"
+                role="tabpanel"
+                aria-labelledby="login-tab"
+              >
+                <h4 class="card-title">Please Login</h4>
+                <form name="loginForm">
+                  <div class="form-group">
+                    <label for="loginEmail" class="form-group_label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="loginEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="form-group_label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="loginPassword"
+                      placeholder="Password"
+                      data-required="password"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary form-group_submit">Submit</button>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="register"
+                role="tabpanel"
+                aria-labelledby="register-tab"
+              >
+              <h4 class="card-title">Please register</h4>
+              <form name="registerForm">
+                <div class="form-group">
+                  <label for="email" class="form-group_label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    data-required="email"
+                    data-invalid-message="Please provide valid email example@example.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password" class="form-group_label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                    data-required="password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nickname" class="form-group_label">Nickname</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nickname"
+                    placeholder="Nickname"
+                    data-required="nickname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="firstname" class="form-group_label">Firstname</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    placeholder="Firstname"
+                    data-required="firstname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastname" class="form-group_label">Lastname</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    placeholder="Lastname"
+                    data-required="lastname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-group_label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone"
+                    data-required="phone"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="gender" class="form-group_label">Gender</label>
+                  <select class="form-select" id="gender" data-required="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="city" class="form-group_label">City</label>
+                  <select class="form-select" id="city" data-required="city" disabled>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="country" class="form-group_label">Country</label>
+                  <select class="form-select" id="country"            data-required="country">
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="birthday" class="form-group_label">Date of birthday</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="birthday"
+                    placeholder="Birthday"
+                    data-required="birthday"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="birthmonth" class="form-group_label">Date of birth month</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="birthmonth"
+                    placeholder="Birthmonth"
+                    data-required="birthmonth"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="birthmonth" class="form-group_label">Date of birth year</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="birthyear"
+                    placeholder="Birthyear"
+                    data-required="birthyear"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary form-group_submit">Submit</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen login-form-wrap d-flex align-items-center justify-content-center welcome-background_img">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    
+    <!-- /.login-page-wrapp -->
+  </body>
+</html>
